@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AnalysisMode>Recommended</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <OutputType>Library</OutputType>
+    <AssemblyTitle>JsonFeed.NET</AssemblyTitle>
+    <Product>JsonFeedNet</Product>
+    <Description>Portable .NET library for generating and consuming JSON Feed (jsonfeed.org) compliant feeds.</Description>
+    <Copyright>Copyright 2022</Copyright>
+    <Version>1.2.0.0</Version>
+    <Authors>Dan Rigby, RouR</Authors>
+    <PackageId>JsonFeed.NET</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/DanRigby/JsonFeed.Net</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>
+      Added .NET7.0 target and removed .NET5.0 target.
+    </PackageReleaseNotes>
+    <PackageTags>jsonfeed jsonfeed.net jsonfeed.org</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="false" />
+  </ItemGroup>
+
+</Project>
